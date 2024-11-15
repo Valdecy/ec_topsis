@@ -1,1 +1,1 @@
-from .src import ec_promethee
+from .src import ec_topsis
