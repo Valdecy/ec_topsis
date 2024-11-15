@@ -219,7 +219,6 @@ class ec_topsis():
         plt.figure(figsize = (size_x, size_y))
         df_melted = self.df_p.melt(var_name = 'Columns', value_name = 'Values')
         sns.boxplot(x = 'Columns', y = 'Values', data = df_melted, palette = 'Set3', hue = 'Columns', dodge = False)
-        plt.axhline(0, color = 'red', linestyle = '--')
         plt.xlabel('Columns')
         plt.ylabel('Values')
         plt.legend([], [], frameon = False)
